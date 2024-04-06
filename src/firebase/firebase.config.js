@@ -4,13 +4,17 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+// জাস্ট দেখার জন্য নিচের লাইন 
+// console.log('inside firebase config', import.meta.env.VITE_PASS)
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAjm9iyuK7lmtxG1JcnyJp2dfooOGUZmHg",
-  authDomain: "react-dragon-news-auth-4e31c.firebaseapp.com",
-  projectId: "react-dragon-news-auth-4e31c",
-  storageBucket: "react-dragon-news-auth-4e31c.appspot.com",
-  messagingSenderId: "381710856980",
-  appId: "1:381710856980:web:7b2051a5bf5cd9cf608801"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
